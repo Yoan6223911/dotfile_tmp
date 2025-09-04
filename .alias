@@ -1,0 +1,11 @@
+"Alias ls incluant -a -l"
+alias ls='ls -al'
+
+"Alias ll incluant -l -a"
+alias ll='ls -al'
+
+"Alias incluant clear"
+alias c='clear'
+
+"Alias pour mettre la couleur rouge sur les mots recherches"
+alias grepc='grep --color=always "motif"

@@ -1,0 +1,23 @@
+"Fonction pour creer un fichier et l'ouvrir"
+function CreerFichier()
+{
+if[ -z "$1"]
+then
+echo "Le nom est vide"
+fi
+touch "$1" && nvim "$1"
+}
+
+"Fonction effectuant une recherche insensible a la casse"
+function mygrep()
+{
+grep -i "&1"
+}
+
+"Personnaliser PS1"
+fonction PS1()
+{
+if["$USER" = "etudiant"]
+then 
+PS1 = '\w \$'
+}
